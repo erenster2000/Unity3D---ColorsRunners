@@ -10,6 +10,10 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2c1c7827dc894353bd32e2d65867a7af564db0/de/fa8a99e6/List`1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/d95181a5c71a4ad88c81e8fccee6b47113ce00/be/8327a155/Transform.cs" root0="SKIP_HIGHLIGHTING" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -72,7 +76,17 @@
       <workItem from="1665478157178" duration="1891000" />
       <workItem from="1665502436243" duration="7182000" />
       <workItem from="1665652315972" duration="2331000" />
-      <workItem from="1665680139428" duration="344000" />
+      <workItem from="1665680139428" duration="1271000" />
+      <workItem from="1665843302740" duration="1847000" />
+      <workItem from="1665990885135" duration="8441000" />
+      <workItem from="1666022142602" duration="3934000" />
+      <workItem from="1666109118090" duration="16124000" />
+      <workItem from="1666185141451" duration="2737000" />
+      <workItem from="1666198033101" duration="5980000" />
+      <workItem from="1666248682300" duration="3551000" />
+      <workItem from="1666342126791" duration="4702000" />
+      <workItem from="1666593563549" duration="16220000" />
+      <workItem from="1666630374343" duration="9651000" />
     </task>
     <servers />
   </component>
