@@ -12,7 +12,10 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2c1c7827dc894353bd32e2d65867a7af564db0/de/fa8a99e6/List`1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/d95181a5c71a4ad88c81e8fccee6b47113ce00/73/50df92e3/Object.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/d95181a5c71a4ad88c81e8fccee6b47113ce00/77/a6999190/Renderer.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/d95181a5c71a4ad88c81e8fccee6b47113ce00/be/8327a155/Transform.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/d95181a5c71a4ad88c81e8fccee6b47113ce00/e1/6d18da17/Material.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -32,6 +35,7 @@
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -92,7 +96,22 @@
       <workItem from="1666764246115" duration="16535000" />
       <workItem from="1666805229993" duration="8575000" />
       <workItem from="1666854115239" duration="12262000" />
-      <workItem from="1666887850291" duration="4933000" />
+      <workItem from="1666887850291" duration="5135000" />
+      <workItem from="1666940760128" duration="1815000" />
+      <workItem from="1666945815815" duration="11396000" />
+      <workItem from="1666994262124" duration="1035000" />
+      <workItem from="1666995378643" duration="192000" />
+      <workItem from="1667029960866" duration="10072000" />
+      <workItem from="1667118343429" duration="10561000" />
+      <workItem from="1667194570603" duration="19891000" />
+      <workItem from="1667223101256" duration="6342000" />
+      <workItem from="1667287721237" duration="10067000" />
+      <workItem from="1667321647932" duration="5170000" />
+      <workItem from="1667373008312" duration="11671000" />
+      <workItem from="1667394306938" duration="2390000" />
+      <workItem from="1667407704617" duration="7297000" />
+      <workItem from="1667461010713" duration="9883000" />
+      <workItem from="1667486360056" duration="5163000" />
     </task>
     <servers />
   </component>

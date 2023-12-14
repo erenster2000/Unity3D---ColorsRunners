@@ -6,6 +6,7 @@ TagManager:
   tags:
   - ColorChangeDoor
   - MinigameHelicopter
+  - Platform
   layers:
   - Default
   - TransparentFX
