@@ -33,12 +33,14 @@ namespace Managers
 
         private void SubscribeEvents()
         {
-            CoreGameSignals.Instance.minigameState += MinigameState;
+            PlayerObjectsSignals.Instance.minigameState += MinigameState;
+            PlayerObjectsSignals.Instance.onListChange += OnListChange;
         }
 
         private void UnsubscribeEvents()
         {
-            CoreGameSignals.Instance.minigameState -= MinigameState;
+            PlayerObjectsSignals.Instance.minigameState -= MinigameState;
+            PlayerObjectsSignals.Instance.onListChange -= OnListChange;
         }
 
         private void OnDisable()
@@ -54,6 +56,11 @@ namespace Managers
             { 
                 stackController.HelicopterPlatformStack();
             }
+        }
+
+        private void OnListChange(GameObject obj, string name)
+        {
+            stackController.ListChange(obj, name);
         }
 
         private void FixedUpdate()

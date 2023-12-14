@@ -30,6 +30,7 @@ namespace Managers
             CoreGameSignals.Instance.onReset += OnReset;
             CoreGameSignals.Instance.onPlay += OnPlay;
             CoreGameSignals.Instance.onFinish += OnFinish;
+            CoreGameSignals.Instance.onStation += OnStation;
         }
 
         private void UnsubscribeEvents()
@@ -38,6 +39,7 @@ namespace Managers
             CoreGameSignals.Instance.onReset -= OnReset;
             CoreGameSignals.Instance.onPlay -= OnPlay;
             CoreGameSignals.Instance.onFinish -= OnFinish;
+            CoreGameSignals.Instance.onStation += OnStation;
         }
 
         private void OnDisable()
@@ -46,6 +48,11 @@ namespace Managers
         }
 
         #endregion
+
+        private void OnStation(bool variable)
+        {
+            playerMovementController.Station(variable);
+        }
         
         private void OnReset()
         {

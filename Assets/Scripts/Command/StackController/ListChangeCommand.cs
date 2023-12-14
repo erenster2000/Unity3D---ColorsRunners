@@ -15,6 +15,7 @@ namespace Command.StackController
         private Transform _poolTransform;
         private Transform _player;
         private StackData _stackData;
+        private int list;
 
         #endregion
         #endregion
@@ -29,22 +30,32 @@ namespace Command.StackController
             _player = player;
         }
         
-        public void ListChange(GameObject obj, int list)
+        public void ListChange(GameObject obj, string listName)
         {
+            if (listName == "Stack") list = 2;
+            else if (listName == "Pool") list = 1;
+
             switch (list)
             {
                 case 1:
-                    _poolList.Add(_stackList[_stackList.IndexOf(obj)]);
-                    _stackList.Remove(_stackList[_stackList.IndexOf(obj)]);
+                    _poolList.Add(obj);
+                    if (_stackList.Contains(obj) != null)
+                    {
+                        _stackList.Remove(obj);
+                    }
                     _stackList.TrimExcess();
                     obj.transform.SetParent(_poolTransform);
+                    obj.SetActive(false);
                     break;
                 
                 case 2:
-                    _stackList.Add(_poolList[_poolList.IndexOf(obj)]);
-                    _poolList.Remove(_poolList[_poolList.IndexOf(obj)]);
+                    _stackList.Add(obj);
+                    if (_poolList.Contains(obj) != null)
+                    {
+                        _poolList.Remove(obj);   
+                    }
                     _poolList.TrimExcess();
-                    
+                    obj.GetComponent<Animator>().SetTrigger("Runner");
                     Vector3 newPos = _player.position;
                     var index = _stackList.Count;
                     newPos.z -= index - (_stackData.StackBetween * index);

@@ -16,9 +16,7 @@ namespace Controllers.MinigameManager
         #endregion
 
         #region Private variables
-
-        private GameObject _player;
-
+        
         #endregion
 
         #endregion
@@ -27,9 +25,11 @@ namespace Controllers.MinigameManager
         {
             for (int i = 0; i < 2; i++)
             {
+                transform.tag = "Untagged";
                 if (minigamePlatform.transform.GetChild(i).GetComponent<Renderer>().material.name != door.GetComponent<Renderer>().material.name)
                 {
                     minigamePlatform.transform.GetChild(i).transform.DOScaleZ(0, 1).OnComplete(()=> MinigameSignals.Instance.onPlayExecution?.Invoke());
+                    DOVirtual.DelayedCall(4, () => CoreGameSignals.Instance.onStation?.Invoke(false));
                     break;
                 }
             }

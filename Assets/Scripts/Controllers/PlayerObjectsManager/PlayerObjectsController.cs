@@ -24,9 +24,9 @@ namespace Controllers.PlayerObjectsManager
 
         #endregion
         #region Private Variables
-
-        private Material _material;
+        
         private ObjectData _objectData;
+        private ColorData _colorData;
         private GameObject _execution;
         private Transform _oldTransform;
 
@@ -36,20 +36,23 @@ namespace Controllers.PlayerObjectsManager
         private void Awake()
         {
             _objectData = GetObjectData();
+            _colorData = GetColorData();
+            materials = _colorData.Colors;
         }
 
         private ObjectData GetObjectData(){return Resources.Load<SO_ObjectData>("Data/SO_ObjectData").ObjectData;}
-        
+        private ColorData GetColorData(){return Resources.Load<SO_ColorData>("Data/SO_ColorData").ColorData;}
         public void PlayerExecution(GameObject other){ _execution = other; }
-        
         public void Comparison(GameObject door)
         {
-            string removeName = " (Instance)";
-            string materialName = door.GetComponent<Renderer>().material.name;
-            int i = materialName.Length - removeName.Length;
-            materialName = materialName.Remove(i, removeName.Length);
-            Color index = (Color)Enum.Parse(typeof(Color), materialName);
-            ColorChange(index);
+            for (int i = 0; i < materials.Count; i++)
+            {
+                if (materials[i].color == door.GetComponent<MeshRenderer>().material.color)
+                {
+                    Color index = (Color)Enum.Parse(typeof(Color), materials[i].name);
+                    ColorChange(index);
+                }
+            }
         }
         
         public void ColorChange(Color color)
@@ -60,8 +63,7 @@ namespace Controllers.PlayerObjectsManager
 
         public void MinigameControl()
         {
-            //DataSignals();
-            CoreGameSignals.Instance.minigameState?.Invoke("HelicopterMinigame");
+            PlayerObjectsSignals.Instance.minigameState?.Invoke("HelicopterMinigame");
             float distance = _objectData.distance;
             float i = _objectData.quantity;
             if (transform.position.x < 0)
@@ -88,15 +90,18 @@ namespace Controllers.PlayerObjectsManager
 
         public void PlayExecution()
         {
-            if (transform.GetChild(0).GetComponent<Renderer>().material.name != _execution.GetComponent<Renderer>().material.name ) // renkleri enum ataması yap ve onun üzerinden işlet.
+            if (transform.GetChild(0).GetComponent<Renderer>().material.color != _execution.GetComponent<Renderer>().material.color ) // renkleri enum ataması yap ve onun üzerinden işlet.
             {
-                Debug.Log(transform.GetChild(0).GetComponent<Renderer>().material);
-                Debug.Log(_execution.GetComponent<Renderer>().material);
                 PlayerAnimation("Dead");
+                DOVirtual.DelayedCall(5, ()=>PlayerObjectsSignals.Instance.onListChange?.Invoke(transform.gameObject, "Pool"));
+            }
+            else
+            {
+                DOVirtual.DelayedCall(3 , ()=>PlayerObjectsSignals.Instance.onListChange?.Invoke(transform.gameObject, "Stack"));
             }
         }
 
-        public void PlayerAnimation(string animation)
+        public void PlayerAnimation(string animation) // durum makinesi yazılacak.
         {
             if (animation == "Runner")
             {

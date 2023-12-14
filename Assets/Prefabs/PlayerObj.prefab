@@ -1499,7 +1499,7 @@ GameObject:
   - component: {fileID: 392187371972245243}
   m_Layer: 0
   m_Name: PlayerObj
-  m_TagString: Untagged
+  m_TagString: PlayerObj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1593,10 +1593,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0aa68abc4fc4bd6a794b5cba9c61376, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  materials:
-  - {fileID: 2100000, guid: c5df2d3bd4a74334892ca256bd82bd47, type: 2}
-  - {fileID: 2100000, guid: 28ac3ab4badfc5942be3a619e9af1061, type: 2}
-  - {fileID: 2100000, guid: 26fb41c21e199e6479a7ab7a92bc0902, type: 2}
+  materials: []
   animator: {fileID: 7379655013467753385}
 --- !u!114 &392187371972245243
 MonoBehaviour:

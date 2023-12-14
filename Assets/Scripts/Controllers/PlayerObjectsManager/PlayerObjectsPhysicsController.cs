@@ -7,7 +7,6 @@ namespace Controllers.PlayerObjectsManager
     public class PlayerObjectsPhysicsController : MonoBehaviour
     {
         #region Self Variables
-
         #region Serialized Variables
 
         [SerializeField] private Managers.PlayerObjectsManager playerObjectsManager;
@@ -15,6 +14,8 @@ namespace Controllers.PlayerObjectsManager
 
         #endregion
 
+        #region Private Variables
+        #endregion
         #endregion
         private void OnTriggerEnter(Collider other)
         {

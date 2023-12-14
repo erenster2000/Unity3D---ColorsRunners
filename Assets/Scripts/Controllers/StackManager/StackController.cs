@@ -27,7 +27,7 @@ namespace Controllers.StackManager
         [SerializeField] private GameObject player;
         [SerializeField] private GameObject playerObj;
         [SerializeField] private Transform pool;
-        [SerializeField] private GameObject MinigamePlatform;
+        [SerializeField] private GameObject minigameplatform;
 
         #endregion
         #region Private Variables
@@ -51,7 +51,7 @@ namespace Controllers.StackManager
             
             for (int i = 0; i < 20; i++)
             {
-                 ListChange(PoolListObj[0], 2);
+                 ListChange(PoolListObj[0], "Stack");
             }
         }
 
@@ -94,12 +94,13 @@ namespace Controllers.StackManager
 
                 if (StackListObj.Count == 0)
                 {
-                    CoreGameSignals.Instance.onFinish?.Invoke();
+                    CoreGameSignals.Instance.onStation?.Invoke(true);
+                    player.transform.position = new Vector3(-1.5f,player.transform.position.y,MinigameObjList[0].transform.position.z);
                     DOVirtual.DelayedCall(1,()=>StackSignals.Instance.onPlatformClose?.Invoke());
                 }
             }
         }
-
+        
         private void PoolInstantiate()
         {
             GameObject player = Instantiate(playerObj);
@@ -108,9 +109,9 @@ namespace Controllers.StackManager
             player.SetActive(false);
         }
 
-        public void ListChange(GameObject obj, int list)
+        public void ListChange(GameObject obj, string listName)
         {
-            ListChangeCommand.ListChange(obj, list);
+            ListChangeCommand.ListChange(obj, listName);
         }
     }
 }

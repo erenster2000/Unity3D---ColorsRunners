@@ -68,6 +68,11 @@ namespace Controllers.PlayerManager
         {
             move.velocity = Vector3.zero;
         }
+
+        public void Station(bool variable)
+        {
+            _station = variable;
+        }
         
         public void Play()
         {

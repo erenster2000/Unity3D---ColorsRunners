@@ -9,6 +9,7 @@ namespace Signals
         public UnityAction onReset = delegate { };
         public UnityAction onPlay  = delegate { };
         public UnityAction onFinish = delegate { };
+        public UnityAction<bool> onStation = delegate { };
         
         public UnityAction<string> minigameState = delegate { };
         public UnityAction<string> onPlayerAnimation = delegate { };
