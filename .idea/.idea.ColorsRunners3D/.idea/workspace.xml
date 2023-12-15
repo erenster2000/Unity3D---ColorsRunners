@@ -11,11 +11,14 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.cinemachine@2.6.17/Runtime/Core/CameraState.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.core@10.10.0/Editor/MaterialUpgrader.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventSystem.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2c1c7827dc894353bd32e2d65867a7af564db0/de/fa8a99e6/List`1.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4fde398772134227852dc037ed8ddb3b18200/89/551b4a68/Rigidbody.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/d95181a5c71a4ad88c81e8fccee6b47113ce00/73/50df92e3/Object.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/d95181a5c71a4ad88c81e8fccee6b47113ce00/77/a6999190/Renderer.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/d95181a5c71a4ad88c81e8fccee6b47113ce00/ae/c82182eb/UnityAction`1.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/d95181a5c71a4ad88c81e8fccee6b47113ce00/be/8327a155/Transform.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/d95181a5c71a4ad88c81e8fccee6b47113ce00/e1/6d18da17/Material.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
@@ -139,7 +142,52 @@
       <workItem from="1668788937253" duration="2814000" />
       <workItem from="1668856408668" duration="9787000" />
       <workItem from="1668940210244" duration="6326000" />
-      <workItem from="1669013641831" duration="8996000" />
+      <workItem from="1669013641831" duration="9339000" />
+      <workItem from="1669048416071" duration="1864000" />
+      <workItem from="1669099877909" duration="5954000" />
+      <workItem from="1669140966978" duration="2353000" />
+      <workItem from="1669184550778" duration="25990000" />
+      <workItem from="1669225125755" duration="735000" />
+      <workItem from="1669279667546" duration="16923000" />
+      <workItem from="1669717156310" duration="6253000" />
+      <workItem from="1669745579914" duration="10913000" />
+      <workItem from="1669789023146" duration="15248000" />
+      <workItem from="1669830633689" duration="4481000" />
+      <workItem from="1669878475006" duration="9925000" />
+      <workItem from="1669914752671" duration="10504000" />
+      <workItem from="1669971019059" duration="9783000" />
+      <workItem from="1670004944649" duration="595000" />
+      <workItem from="1670145227619" duration="1894000" />
+      <workItem from="1670165827072" duration="7908000" />
+      <workItem from="1670217862101" duration="6283000" />
+      <workItem from="1670259024321" duration="3538000" />
+      <workItem from="1670308801697" duration="8403000" />
+      <workItem from="1670357245347" duration="1530000" />
+      <workItem from="1670405825134" duration="2695000" />
+      <workItem from="1670433982743" duration="2362000" />
+      <workItem from="1670488097755" duration="1480000" />
+      <workItem from="1670586923177" duration="956000" />
+      <workItem from="1670774712227" duration="1632000" />
+      <workItem from="1670827844637" duration="198000" />
+      <workItem from="1670831352292" duration="800000" />
+      <workItem from="1670875519603" duration="1761000" />
+      <workItem from="1671091121347" duration="604000" />
+      <workItem from="1671186312189" duration="660000" />
+      <workItem from="1671273961550" duration="9000" />
+      <workItem from="1671395188474" duration="1106000" />
+      <workItem from="1671527512673" duration="2432000" />
+      <workItem from="1671551002017" duration="4538000" />
+      <workItem from="1672663063513" duration="95000" />
+      <workItem from="1672681315162" duration="2552000" />
+      <workItem from="1673346229821" duration="1268000" />
+      <workItem from="1673520226076" duration="2374000" />
+      <workItem from="1673624248962" duration="7000" />
+      <workItem from="1673628591135" duration="1337000" />
+      <workItem from="1673881066925" duration="15000" />
+      <workItem from="1673990984595" duration="40000" />
+      <workItem from="1674485927518" duration="1234000" />
+      <workItem from="1675504490666" duration="18000" />
+      <workItem from="1678979167316" duration="2234000" />
     </task>
     <servers />
   </component>
